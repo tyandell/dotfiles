@@ -28,3 +28,7 @@ stow --no-folding gnupg
 brew install git
 stow --no-folding git
 curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
+
+# direnv
+brew install direnv
+fish -c fisher omf/direnv
