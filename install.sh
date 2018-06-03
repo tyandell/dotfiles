@@ -21,3 +21,8 @@ nvim +PlugInstall +qa
 brew install gnupg
 brew install pinentry-mac
 stow --no-folding gnupg
+
+# git
+brew install git
+stow --no-folding git
+curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
