@@ -8,8 +8,10 @@ brew install stow
 
 # fish
 brew install fish
-mkdir ~/bin
+curl -L -o ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 stow --no-folding fish
+mkdir ~/bin
+fish -c fisher
 
 # neovim
 brew install neovim
