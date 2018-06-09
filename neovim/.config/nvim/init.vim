@@ -1,6 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'othree/yajs.vim'
 Plug 'sbdchd/neoformat'
 call plug#end()
 
