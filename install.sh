@@ -6,6 +6,12 @@
 # Install installer dependencies.
 brew install stow
 
+# gnupg
+# =====
+brew install gnupg
+brew install pinentry-mac
+stow --no-folding gnupg
+
 # fish
 # ====
 brew install fish
@@ -20,12 +26,6 @@ brew install neovim
 curl -L -o ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 stow --no-folding neovim
 nvim +PlugInstall +qa
-
-# gnupg
-# =====
-brew install gnupg
-brew install pinentry-mac
-stow --no-folding gnupg
 
 # git
 # ===
