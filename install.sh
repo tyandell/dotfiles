@@ -36,4 +36,4 @@ curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/
 # direnv
 # ======
 brew install direnv
-fish -c fisher omf/direnv
+fish -c fisher add oh-my-fish/plugin-direnv
