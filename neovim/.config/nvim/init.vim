@@ -21,3 +21,7 @@ autocmd FileType go setlocal ts=3 sts=3 sw=3 noexpandtab
 
 " Neoformat
 nnoremap g= :Neoformat<CR>
+
+" Thor
+autocmd BufNewFile,BufRead Thorfile setlocal ft=ruby
+autocmd BufNewFile,BufRead *.thor setlocal ft=ruby
