@@ -11,6 +11,8 @@ brew install stow
 brew install gnupg
 brew install pinentry-mac
 stow --no-folding gnupg
+chmod 700 ~/.gnupg
+chmod 600 ~/.gnupg/*
 
 # fish
 # ====
