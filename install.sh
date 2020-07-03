@@ -20,7 +20,6 @@ brew install fish
 curl -L -o ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 stow --no-folding fish
 mkdir ~/bin
-fish -c fisher
 
 # neovim
 # ======
@@ -38,4 +37,11 @@ curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/
 # direnv
 # ======
 brew install direnv
-fish -c fisher add oh-my-fish/plugin-direnv
+
+# Other stuff
+# ===========
+brew install rbenv node go
+npm i -g yarn
+
+# Now that we have all the dependencies:
+fish -c fisher
