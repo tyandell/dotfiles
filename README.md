@@ -16,3 +16,25 @@ Now you can switch `origin` to SSH:
 ```sh
 git remote set-url origin git@github.com:tyandell/dotfiles.git
 ```
+
+## Other stuff
+
+### Use fish
+
+Run `sudo nvim /etc/shells` and add:
+
+```
+/usr/local/bin/fish
+```
+
+Run:
+
+```sh
+chsh -s /usr/local/bin/fish
+```
+
+### Pick a shorter hostname
+
+```sh
+sudo scutil --set HostName mbp
+```
