@@ -44,4 +44,4 @@ brew install rbenv node go
 npm i -g yarn
 
 # Now that we have all the dependencies:
-fish -c fisher
+fish -c fisher update
