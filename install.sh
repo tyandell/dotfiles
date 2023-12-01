@@ -38,7 +38,13 @@ brew install direnv
 # asdf
 # ====
 brew install asdf
+stow --no-folding asdf
+asdf plugin add ruby
+asdf plugin add nodejs
+asdf plugin add golang
+asdf plugin add yarn
 
 # ---
 
 fish -c "fisher update"
+asdf install
