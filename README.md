@@ -36,5 +36,5 @@ chsh -s /opt/homebrew/bin/fish
 ### Change Hostname
 
 ```sh
-sudo scutil --set HostName mbp
+sudo scutil --set HostName mba
 ```
