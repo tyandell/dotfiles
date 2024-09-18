@@ -4,6 +4,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'othree/yajs.vim'
 Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 set ts=2 sts=2 sw=2 expandtab
