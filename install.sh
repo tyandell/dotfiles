@@ -43,6 +43,7 @@ asdf plugin add ruby
 asdf plugin add nodejs
 asdf plugin add golang
 asdf plugin add yarn
+asdf plugin add python
 
 # ---
 
