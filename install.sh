@@ -37,12 +37,20 @@ brew install direnv
 
 # asdf
 # ====
+
 brew install asdf
 stow --no-folding asdf
+
+brew install libyaml
 asdf plugin add ruby
+
 asdf plugin add nodejs
+
 asdf plugin add golang
+
 asdf plugin add yarn
+
+brew install xz
 asdf plugin add python
 
 # ---
