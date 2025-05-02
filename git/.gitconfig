@@ -1,3 +1,6 @@
 [user]
 	email = tyandell@gmail.com
 	name = Todd Yandell
+
+[init]
+	defaultBranch = main
