@@ -1,4 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'brenton-leighton/multiple-cursors.nvim'
+Plug 'easymotion/vim-easymotion'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'othree/es.next.syntax.vim'
@@ -39,3 +41,14 @@ if isdirectory(expand('~/.config/nvim/config'))
     endif
   endfor
 endif
+
+" ---
+
+lua << EOF
+require("multiple-cursors").setup()
+
+vim.keymap.set({"n","x"}, "<C-j>", "<Cmd>MultipleCursorsAddDown<CR>")
+vim.keymap.set({"n","x"}, "<C-k>", "<Cmd>MultipleCursorsAddUp<CR>")
+vim.keymap.set({"n","x"}, "<Leader>d", "<Cmd>MultipleCursorsAddJumpNextMatch<CR>")
+vim.keymap.set({"n","x"}, "<Leader>l", "<Cmd>MultipleCursorsLock<CR>")
+EOF
