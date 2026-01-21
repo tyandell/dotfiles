@@ -1,7 +1,5 @@
 /opt/homebrew/bin/brew shellenv | source
 
-set -gx PATH $HOME/bin $PATH
-
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
@@ -27,3 +25,7 @@ if not contains $_asdf_shims $PATH
     set -gx --prepend PATH $_asdf_shims
 end
 set --erase _asdf_shims
+
+# ---
+
+set -gx PATH $HOME/.local/bin $HOME/bin $PATH
