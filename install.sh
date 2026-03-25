@@ -31,29 +31,13 @@ brew install git
 stow --no-folding git
 curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
 
-# direnv
-# ======
-brew install direnv
-
-# asdf
+# mise
 # ====
-
-brew install asdf
-stow --no-folding asdf
-
-brew install libyaml
-asdf plugin add ruby
-
-asdf plugin add nodejs
-
-asdf plugin add golang
-
-asdf plugin add yarn
-
-brew install xz
-asdf plugin add python
+brew install mise
+stow --no-folding mise
 
 # ---
 
 fish -c "fisher update"
-asdf install
+
+mise install

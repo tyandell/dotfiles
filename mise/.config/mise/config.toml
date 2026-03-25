@@ -1,0 +1,12 @@
+[settings]
+experimental = true
+
+[tools]
+go = "1.26.1"
+node = "25.8.2"
+python = "3.14.3"
+ruby = "4.0.2"
+yarn = "4.13.0"
+
+[hooks.postinstall]
+script = "mise exec go -- go install golang.org/x/tools/cmd/goimports@latest"

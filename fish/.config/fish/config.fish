@@ -10,22 +10,6 @@ abbr g git status
 gpg-connect-agent /bye ^/dev/null
 set -gx SSH_AUTH_SOCK ~/.gnupg/S.gpg-agent.ssh
 
-# direnv
-# ======
-direnv hook fish | source
-
-# asdf
-# ====
-if test -z $ASDF_DATA_DIR
-    set _asdf_shims "$HOME/.asdf/shims"
-else
-    set _asdf_shims "$ASDF_DATA_DIR/shims"
-end
-if not contains $_asdf_shims $PATH
-    set -gx --prepend PATH $_asdf_shims
-end
-set --erase _asdf_shims
-
 # ---
 
 set -gx PATH $HOME/.local/bin $HOME/bin $PATH
