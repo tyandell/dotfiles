@@ -5,9 +5,10 @@ experimental = true
 bun = "latest"
 go = "latest"
 node = "latest"
+prettier = "latest"
 python = "latest"
 ruby = "latest"
-prettier = "latest"
+rust = "latest"
 
 [hooks.postinstall]
 script = "mise exec go -- go install golang.org/x/tools/cmd/goimports@latest"
