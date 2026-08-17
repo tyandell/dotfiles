@@ -13,3 +13,7 @@ set -gx SSH_AUTH_SOCK ~/.gnupg/S.gpg-agent.ssh
 # ---
 
 set -gx PATH $HOME/.local/bin $HOME/bin $PATH
+
+# mise
+# ====
+/opt/homebrew/bin/mise activate fish | source
