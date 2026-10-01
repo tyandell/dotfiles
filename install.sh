@@ -44,6 +44,11 @@ stow --no-folding ghostty
 brew install mise
 stow --no-folding mise
 
+# Claude Code
+# ===========
+curl -fsSL https://claude.ai/install.sh | bash
+stow --no-folding claude
+
 # ---
 
 fish -c "fisher update"
