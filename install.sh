@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Don't prompt for confirmation before installing dependencies.
+export HOMEBREW_NO_ASK=1
+
 # Install installer dependencies.
 brew install stow
 
