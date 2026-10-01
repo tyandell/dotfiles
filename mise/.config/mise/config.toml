@@ -11,4 +11,4 @@ ruby = "latest"
 rust = "latest"
 
 [hooks.postinstall]
-script = "mise exec go -- go install golang.org/x/tools/cmd/goimports@latest"
+run = "mise exec go -- go install golang.org/x/tools/cmd/goimports@latest"
