@@ -34,6 +34,11 @@ brew install git
 stow --no-folding git
 curl -L -o ~/.config/git/ignore --create-dirs https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore
 
+# Ghostty
+# =======
+brew install --cask ghostty
+stow --no-folding ghostty
+
 # mise
 # ====
 brew install mise

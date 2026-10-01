@@ -1,0 +1,11 @@
+# Open new windows at the default size instead of restoring previous ones.
+window-save-state = never
+
+# Open new terminals in ~ instead of the last directory used.
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = false
+
+# Install Ghostty's terminfo on SSH hosts, falling back to xterm-256color.
+shell-integration-features = ssh-terminfo,ssh-env
