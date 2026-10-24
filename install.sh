@@ -44,10 +44,19 @@ stow --no-folding ghostty
 brew install mise
 stow --no-folding mise
 
+# Agent instructions
+# ==================
+stow --no-folding agents
+
 # Claude Code
 # ===========
 curl -fsSL https://claude.ai/install.sh | bash
 stow --no-folding claude
+
+# Pi
+# ==
+mkdir -p ~/.pi/agent
+ln -sf ~/.config/agents/AGENTS.md ~/.pi/agent/AGENTS.md
 
 # ---
 
