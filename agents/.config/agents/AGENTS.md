@@ -1,9 +1,9 @@
 # Global instructions
 
-## Tools and languages
+## Languages and tools
 
-- Use mise for language runtimes and dev tools whenever possible. Don't install things globally (`brew install`, `npm install -g`, `pip install --user`, `gem install`, `cargo install`, `go install`, etc.), and don't use the system or Homebrew versions of languages (e.g. `/usr/bin/python3`).
-- In a project, add the tools it needs to the project's `mise.toml` with `mise use <tool>@<version>`. For a one-off command, use `mise exec <tool>@<version> -- <command>` instead of installing anything.
-- Tools that aren't in mise's registry can often still come from mise's backends (`npm:`, `pipx:`, `cargo:`, `go:`, `gem:`, `github:`, `aqua:`).
-- Project-local dependencies (`npm install`, a project venv, `bundle install`) are fine.
-- Don't change my global mise config (`~/.config/mise/config.toml`) unless I ask. If something can't be done through mise, ask me before installing it another way.
+- Use mise for programming language runtimes (Python, Node, Ruby, Go, etc.). Don't use the system or Homebrew versions (e.g. `/usr/bin/python3`), and don't install a runtime globally.
+- In a project, pin the runtimes it needs in its `mise.toml` with `mise use <lang>@<version>`. For a one-off script outside a project, use `mise exec <lang>@<version> -- <command>`.
+- Project-local dependencies (`npm install`, a project venv, `bundle install`) are fine. Don't install packages globally (`npm install -g`, `pip install --user`, `gem install`, `cargo install`, `go install`).
+- This is about language runtimes, not every command. Use CLI tools that are already installed (`ffmpeg`, `jq`, etc.) directly; don't route them through mise just because mise also has them.
+- If you need a tool that isn't installed, a one-off `mise exec` is fine; otherwise ask me before installing it (including `brew install`). Don't change my global mise config (`~/.config/mise/config.toml`) unless I ask.
